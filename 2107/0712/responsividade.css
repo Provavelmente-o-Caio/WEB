@@ -1,0 +1,38 @@
+/* Celular */
+@import url(impressora.css) print;
+
+.container {
+    margin: auto;
+    width: 95%;
+}
+
+header {
+    height: 30vh;
+    background-color: #801515;
+}
+
+nav {
+    height: 30px;
+    background-color: black;
+}
+
+main, article, aside {
+    height: 60vh;
+}
+
+article {
+    background-color: #407f7f;
+}
+
+aside {
+    background-color: #003333;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}

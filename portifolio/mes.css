@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #B1D8B7;
+}
+
+h1 {
+    text-align: center;
+}
+
+.img_invertida {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    background-color: #EEEDE7;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    font-size: 120%;
+    text-decoration: none;
+    color: #2F5233;
+    margin-left: 25px;
+}
+
+a:hover, a:active {
+    font-weight: bold;
+}
+
+span {
+    font-size: 140%;
+}
+
+/* Menu lateral */
+@media all and (min-width: 768px) {
+    .nav_l {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #2F5233;
+        overflow-x: hidden;
+        transition: 0.8s;
+        border-right: #1A4314 solid 3px;
+    }
+    
+    .nav_l a {
+        display: block;
+        margin-bottom: 50px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav a:hover, nav a:active {
+        color: white;
+    }
+    
+    .nav_l .fecha {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    #conteudo {
+        transition: margin-left 0.8s;
+    }
+
+    ul {
+        margin: 40px 0 0 5px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .nav_l {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #2F5233;
+        overflow-x: hidden;
+        transition: 0.8s;
+        border-right: #1A4314 solid 3px;
+    }
+    
+    .nav_l a {
+        display: block;
+        margin-bottom: 50px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav a:hover, nav a:active {
+        color: white;
+    }
+    
+    .nav_l .fecha {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    #conteudo {
+        transition: margin-left 0.8s;
+    }
+}

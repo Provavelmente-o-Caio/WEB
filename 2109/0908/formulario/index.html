@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Inscrição para os cursos FIC (Qualificação Profissional)</h1>
+        </header>
+        <main>
+            <p>Os cursos de qualificação profissional oferecidos pelo IFSC atendem a necessidade de aperfeiçoamento para profissionais de diversas áreas, em temas específicos e práticos. Para fazer um curso na modalidade a distância, você não precisa residir na mesma cidade do câmpus. Veja abaixo quais os cursos disponíveis.</p>
+            <div class="form">
+                <div class="centro">
+                    <h2>Cadastro em cursos</h2>
+                    <p>Escolha o curso em que deseja participar:</p>
+                </div>
+                <form method="post" id="formu">
+                    <fieldset>
+                        <legend>Escolha do Curso</legend>
+                        <!-- Escolha do Curso -->
+                        <p class="bold">Vespertino</p>
+                        <input type="radio" name="curso" id="curso_f">
+                        <label for="curso_f">Ferramentas Online - Online</label>
+                        <br>
+                        <p class="bold">Noturno</p>
+                        <input type="radio" name="curso" id="curso_e">
+                        <label for="curso_e">Empreendedorismo no setor turístico  - Campus Garopaba</label>
+                        <br>
+                        <!-- Escolaridade -->
+                        <div class="select">
+                            <label for="">Qual é sua Escolaridade?</label>
+                            <select name="esc" id="esc" required>
+                                <option value="" disabled selected>Selecione uma educação</option>
+                                <option value="se">Sem Educação Formal</option>
+                                <option value="fi">Fundamental Incompleto</option>
+                                <option value="fc">Fundamental Completo</option>
+                                <option value="emi">Ensino Medio Incompleto</option>
+                                <option value="emc">Ensino Medio Completo</option>
+                                <option value="esi">Ensino Superior Incompleto</option>
+                                <option value="esc">Ensino Superior Completo</option>
+                                <option value="pg">Pós-Graduação</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Informações Pessoais</legend>
+                        <!-- Nome Usuário -->
+                        <label for="nome">Digite seu nome:</label>
+                        <input type="text" name="nome" id="nome">
+                        <br>
+                        <!-- Idade --> 
+                        <label for="ida">Informe sua Idade: </label> 
+                        <input type="date" name="ida" id="ida"> 
+                        <br>
+                        <!-- Gênero -->
+                        <label for="">Informe seu gênero: </label>
+                        <input type="radio" name="genero" id="masc">
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="genero" id="fem">
+                        <label for="fem">Feminino</label>
+                        <input type="radio" name="genero" id="outro">
+                        <label for="outro">Outro</label>
+                        <br>
+                        <!-- CPF -->
+                        <label for="cpf">Digite apenas os números de seu CPF: </label>
+                        <input type="text" name="cpf" id="cpf" minlength="11">
+                        <br>
+                        <!-- Endereço: Estado e Cidade -->
+                        <label for="local">Selecione o seu estado e cidade: </label>
+                        <select name="local" id="estados" required>
+                            <option value=""></option>
+                        </select>
+                        <select name="local" id="cidades">
+                        </select>
+                        <br>
+                        <!-- Endereço: Cep-->
+                        <label for="cep">Informe somente os número de seu CEP: </label>
+                        <input type="text" name="cep" id="cep" minlength="8">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Meios de Contato</legend>
+                        <!-- Email -->
+                        <label for="">Informe seu email de contato: </label>
+                        <input type="email" name="email" id="email">
+                        <br>
+                        <!-- Número -->
+                        <label for="num">Digete seu número telefônico:</label>
+                        <input type="text" name="num" id="num">
+                    </fieldset>
+
+                    <div class="centro">
+                        <input type="submit" value="'Enviar'">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

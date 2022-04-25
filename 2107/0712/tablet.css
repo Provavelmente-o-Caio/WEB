@@ -1,0 +1,23 @@
+aside{
+    display: block;
+    width: 30%;
+    float: left;
+}
+
+article{
+    width: 70%;
+    float: right;
+    background-color: darkmagenta;
+}
+.clear{
+    clear: both;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}

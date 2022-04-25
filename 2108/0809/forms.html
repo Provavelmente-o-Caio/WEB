@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <main>
+        <h1>Pesquisador do Caio</h1>
+        <form action="" method="post">
+            <!--name é o nome da variável-->
+            <div>
+                <label for="q">Pesquisar: </label>
+                <input type="search" name="q" required placeholder="escreve aqui" autocomplete="off">
+            </div>
+
+            <div>
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" step="1">
+            </div>
+
+            <div>
+                <label for="nascimento">Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento">
+            </div>
+
+            <div>
+                <label for="cor">Cor</label>
+                <input type="color" name="cor" id="cor">
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" maxlength="140">
+            </div>
+
+            <div>
+                <label>Gênero</label>
+                <hr>
+                <input type="radio" name="genero" id="masculino">
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" name="genero" id="femenino">
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" name="genero" id="outro">
+                <label for="outro">Outro</label>
+            </div>
+
+            <div>
+                <label for="">Áreas do conhecimento</label>
+                <hr>
+                <input type="checkbox" name="php" id="php" value="php">
+                <label for="php">PHP</label>
+                <br>
+                <input type="checkbox" name="html" id="html" value="html">
+                <label for="html">HTML</label>
+                <br>
+                <input type="checkbox" name="css" id="css" value="css">
+                <label for="css">CSS</label>
+            </div>
+
+            <div>
+                <label for="msg">Escreva uma mensagem:</label>
+                <textarea name="mds" id="msg" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+            <input type="submit" value="Botão com submit">
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* Modile First */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(images/fundo.png);
+    margin: 0;
+    padding: 0;
+    color: #CCCCCC;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+article a {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+article a:hover, article a:active {
+    color: #CCCCCC;
+    text-decoration: underline;
+}
+
+/* Correção pra imagem */
+img {
+    max-width: 100%;
+}
+
+header, nav, aside, article, footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav, article, footer {
+    background-color: #00349f;
+}
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+article {
+    text-align: justify;
+    padding: 20px;
+}
+
+/* formatação do menu */
+nav a:link, nav a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav li {
+    list-style-type: none;
+    text-align: right;
+    padding: 10px;
+    display: none;
+}
+
+/* Mostras só ao clicar */
+nav li:first-child {
+    display: block;
+}
+
+nav:hover li {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+aside {
+    display: none;
+}
+
+/* Sobreposição de CSS para telas <= 768px */
+@media all and (min-width:768px){
+
+    nav li, nav:hover li {
+        display: inline-block;
+    }
+
+    nav li:first-child {
+        display: none;
+    }
+
+    nav {
+        text-align: right;
+        padding: 20px;
+    }
+
+    aside {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    header, article, nav, footer {
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    #solucoes {
+        flex-basis: 0;
+        flex-shrink: 1;
+    }
+
+    .pc {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+    }
+
+    nav a:hover {
+        background-color: blue;
+        border: rgb(0, 0, 83);
+        border-style: solid;
+        border-radius: 5px;
+    }
+}

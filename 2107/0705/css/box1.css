@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 940px;
+    height: 800px;
+    margin: auto;
+}
+
+.topo {
+    background-color: red;
+    width: 940px;
+    height: 200px;
+}
+
+.menu {
+    width: 200px;
+    height: 450px;
+    background-color: orchid;
+    float: left;
+}
+
+.conteudo {
+    width: 540px;
+    height: 450px;
+    background-color: lightgray;
+    color: black;
+    float: left;
+}
+
+.banner {
+    width: 200px;
+    height: 450px;
+    float: left;
+    background-color: lime;
+}
+
+.rodape {
+    width: 940px;
+    height: 150px;
+    background-color: blue;
+    clear: both;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}

@@ -1,0 +1,105 @@
+/* Estrutura */
+body {
+    background-image: url(images/fundo.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, li, p {
+    margin: 0;
+    padding: 2;
+}
+
+div, header, nav, footer, main, aside, article {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.container_conteudo {
+    display: flex;
+    flex-direction: row;
+    max-width: 960px;
+}
+
+@media screen and (max-width: 767px) {
+    .container_conteudo {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 960px;
+    }
+}
+
+/* Imagem Topo */
+header {
+    text-align: center;
+}
+
+/* Parte Principal */
+main {
+    background-color: #FFF;
+    padding: 10px;
+}
+
+main aside {
+    text-align: center;
+    width: 30%;
+}
+
+main article {
+    text-align: justify;
+    width: 30%;
+}
+
+.galeria {
+    text-align: center;
+}
+
+.galeria img{
+    width: 240px;
+    height: 180px;
+    padding: 10px;
+}
+
+/* Cabeçalho e rodapé */
+nav, footer {
+    background-color: #03316C;
+}
+
+nav {
+    height: 70px;
+    line-height: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+a:link, a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+footer {
+    max-height: 60px;
+    line-height: 30px;
+    color: #FFF;
+    text-align: center;
+}

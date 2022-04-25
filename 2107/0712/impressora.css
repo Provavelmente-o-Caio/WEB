@@ -1,0 +1,26 @@
+.container {
+    margin: auto;
+    width: 95%;
+}
+
+header {
+    height: 30vh;
+    background-color: black;
+}
+
+nav {
+    height: 30px;
+    background-color: black;
+}
+
+main, article, aside {
+    height: 60vh;
+}
+
+article {
+    background-color: black;
+}
+
+aside {
+    background-color: black;
+}

@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #B1D8B7;
+    text-align: center;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+header {
+    margin-top: 5%;
+}
+
+/* Formação dos links */
+a {
+    padding: 10px;
+}
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* Adaptação PC */
+@media all and (min-width:768px) {
+    a:hover, a:active {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    /* Organização do grid */
+    main {
+        background-color: #2F5233;
+        padding: 20px;
+        height: 50%;
+        margin: 5% 10% 10% 5%;
+        border-radius: 10px;
+        border: #1A4314 solid 3px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas:
+            "mes5 mes6 mes7 mes8"
+            "mes9 mes10 mes11 mes12"
+            "mes1 mes2 mes3 mes4";
+    }
+}
+
+.mes1 {
+    grid-area: mes1;
+}
+
+.mes2 {
+    grid-area: mes2;
+}
+
+.mes3 {
+    grid-area: mes3;
+}
+
+.mes4 {
+    grid-area: mes4;
+}
+
+.mes5 {
+    grid-area: mes5;
+}
+
+.mes6 {
+    grid-area: mes6;
+}
+
+.mes7 {
+    grid-area: mes7;
+}
+
+.mes8 {
+    grid-area: mes8;
+}
+
+.mes9 {
+    grid-area: mes9;
+}
+
+.mes10 {
+    grid-area: mes10;
+}
+
+.mes11 {
+    grid-area: mes11;
+}
+
+.mes12 {
+    grid-area: mes12;
+}
+
+/* Adaptação mobile */
+@media all and (max-width:767px){
+    main {
+        background-color: #2F5233;
+        padding: 20px;
+        margin-top: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 10px;
+        border: #1A4314 solid 3px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas:
+            "mes1 mes2"
+            "mes3 mes4"
+            "mes5 mes6"
+            "mes7 mes8"
+            "mes9 mes10"
+            "mes11 mes12";
+    }
+
+    a:hover {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:active {
+        color: white;
+        text-decoration: none;
+    }
+}

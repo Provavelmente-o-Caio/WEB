@@ -1,0 +1,22 @@
+CREATE TABLE usuario(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(200) NOT NULL,
+    email VARCHAR(200) NOT NULL,
+    senha CHAR(200) NOT NULL
+);
+
+CREATE TABLE texto(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(200) NOT NULL,
+    corpo TEXT NOT NULL,
+    usuario_id INT NOT NULL,
+    FOREIGN KEY(usuario_id) REFERENCES usuario(id)
+);
+
+CREATE TABLE imagem (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    usuario_id INT NOT NULL,
+    status INT NOT NULL,
+    tipo VARCHAR(200) NOT NULL,
+    FOREIGN KEY(usuario_id) REFERENCES usuario(id)
+);

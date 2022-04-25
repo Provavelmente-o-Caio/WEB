@@ -1,0 +1,85 @@
+body {
+    background-image: url(images/fundo.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+div, header, nav, footer, main, aside, article {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+
+main {
+    background-color: #FFF;
+    padding: 33px;
+}
+
+main aside {
+    float: left;
+    width: 25%;
+    margin-left: 40px;
+    text-align: center;
+}
+
+main article {
+    float: right;
+    margin-right: 25px;
+    width: 60%;
+    text-align: justify;
+}
+
+.galeria {
+    clear: both;
+    text-align: center;
+}
+
+.galeria img{
+    padding: 20px;
+}
+
+nav, footer {
+    background-color: #03316C;
+}
+
+nav {
+    height: 70px;
+    line-height: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+a:link, a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(212, 200, 200);
+    text-decoration: none;
+}
+
+footer {
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    text-align: center;
+}

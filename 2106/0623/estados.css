@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #C2D9C0;
+    display: grid;
+}
+
+h1, h3, a {
+    text-align: center;
+}
+
+.sc {
+    list-style-image: url(imgs/sc.jpg);
+}
+
+.rs {
+    list-style-image: url(imgs/rs.jpg);
+}
+
+.pr {
+    list-style-image: url(imgs/pr.png);
+}
+
+.estrela {
+    list-style-image: url(imgs/estrela.png);
+}
+
+ul ul {
+    list-style: circle;
+}
+
+.lista {
+    background-color: white;
+    border: 3px solid black;
+    width: 15vw;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    top: 15vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}

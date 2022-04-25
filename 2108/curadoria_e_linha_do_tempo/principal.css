@@ -1,0 +1,190 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0efeb;
+    padding: 0;
+    margin: 0;
+}
+
+.pag{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+nav{
+    background-color: #A5A58D;
+}
+
+/* Header */
+header{
+    margin: auto;
+}
+
+/* Parte Principal */
+main{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Ajustes main */
+.container img{
+    border-radius: 25px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main a{
+    color: black;
+    text-decoration: none;
+    background-color: #A5A58D;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+footer{
+    background-color: #A5A58D;
+}
+
+@media all and (min-width: 768px){
+    body{
+        margin: 55px 0 0 0;
+    }
+
+    /* Ajustes Nav */
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        nav li:first-child{
+            display: none;
+        }
+
+        nav ul{
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li{
+            text-align: center;
+            padding: 15px 0px 15px 0px;
+        }
+
+        nav a{
+            padding: 15px 35px 15px 35px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .main{
+            margin: 0 50px 50px 50px;
+        }
+
+        nav li:hover{
+            background-color: #B7B7A4;
+        }
+
+        main p{
+            margin: auto;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "george vitoria";
+            margin: auto;
+        }
+
+            #george{
+                grid-area: george;
+                margin-right: 10vw;
+            }
+        
+            #vitoria{
+                grid-area: vitoria;
+                margin-left: 10vw;
+                margin-bottom: 10px;
+            }
+
+        main a{
+            background-color: #A5A58D;
+            padding: 10px;
+            border-radius: 25px;
+        }
+
+            main a:hover{
+                background-color: #B7B7A4;
+            }
+}
+
+@media all and (max-width: 767px){
+    *{
+        margin: 0;
+        padding: 0;
+        margin: auto;
+    }
+
+    p{
+        text-align: justify;
+        margin: 0 15px 0 15px;
+    }
+
+    .pag{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .container{
+        margin-top: 15px;
+    }
+
+    .art{
+        margin-bottom: 30px;
+    }
+
+    nav li{
+        margin: 0px 0px 4px 30px;
+        padding: 5px;
+        display: none;
+        background-color: #B7B7A4;
+        border-radius: 25px;
+        width: 80%;
+    }
+
+    nav li:first-child{
+        margin: 0px 0px 4px 10px;
+        font-size: 120%;
+    }
+
+    nav li:first-child {
+        display: block;
+        background-color: #A5A58D;
+    }
+    
+    nav:hover li {
+        display: block;
+    }
+
+    nav ul{
+        padding: 5px;
+    }
+    
+}

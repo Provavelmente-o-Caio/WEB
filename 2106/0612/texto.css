@@ -1,0 +1,50 @@
+body {
+    background-color: #BDD9C7;
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.centro_img {
+    display: block;
+    margin: auto;
+    border: 3px solid black;
+}
+
+.centro_img_t {
+    display: block;
+    margin: auto;
+}
+
+.centro_txt {
+    text-align: center;
+    list-style: none;
+}
+
+p {
+    text-align: justify;
+    margin: 10px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.header {
+    background-color: #36736E;
+    overflow: hidden;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,14 @@
+p{
+    color: darkred;
+}
+
+h1{
+    color: gold;
+}
+
+a {
+    font-family: cursive;
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 50px;
+}

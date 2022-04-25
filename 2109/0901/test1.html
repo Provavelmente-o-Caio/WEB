@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JS</title>
+</head>
+<body>
+    <p>Meu nome é:</p>
+    <form action="" method="get">
+        <input type="text" name="" id="nome" value="">
+        <button>Vai</button>
+    </form>
+
+    <script>
+        // Elementos do HTML
+        const paragrafo = document.querySelector("p");
+        const botao = document.querySelector("button")
+        let nome = document.getElementById("nome")
+
+        // Adicionar um evento ao botão
+        botao.addEventListener("click", function(e){
+            e.preventDefault();
+            paragrafo.innerHTML = ("Meu nome é: " + nome.value);
+        })
+    </script>
+</body>
+</html>

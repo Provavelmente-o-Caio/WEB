@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+</head>
+<body>
+    <script>
+         // sortear entre 1 e 6
+         function dado(){
+            return Math.ceil( Math.random()*6);
+       }
+       
+       let contador = 0;
+
+       //Crie um script que jogue 2 dados simultaneamente 100 vezes e informe no final quantas vezes ele caíram com a mesma face (mesmo valor);
+       let jogada1 = dado();
+       console.log(jogada1)
+       let jogada2 = dado();
+       console.log(jogada2)
+       if(jogada1 == jogada2){
+            contador++;
+       }
+    </script>
+</body>
+</html>
